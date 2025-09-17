@@ -1,4 +1,4 @@
-# Troubleshooting `dnf update` Failure on EC2  
+# Troubleshooting dnf update Failure on EC2  
 
 *This repository includes English first, followed by Japanese.*  
 （この後ろに日本語版が続きます）  
@@ -63,7 +63,7 @@ Re-ran `dnf update` and the update completed successfully.
 
 ---
 
-# EC2での `dnf update` 失敗と解決記録  
+# EC2での dnf update 解決記録  
 
 ## 概要  
 
@@ -73,7 +73,7 @@ Amazon Linux 2023 で `sudo dnf update -y` を実行した際、タイムアウ�
 
 ---
 
-## Before（問題発生）  
+## 問題発生  
 
 `dnf update` 実行時に `Curl error (28): Timeout` が発生。  
 
@@ -107,7 +107,7 @@ Amazon Linux 2023 で `sudo dnf update -y` を実行した際、タイムアウ�
 
 ---
 
-## After（解決）  
+## 解決  
 
 再度 `dnf update` を実行し、正常に完了。  
 
@@ -119,4 +119,5 @@ Amazon Linux 2023 で `sudo dnf update -y` を実行した際、タイムアウ�
 
 * 宛先が `0.0.0.0/0` でも、ポートが限定されていれば通信は制限される  
 * AWS のセキュリティグループはステートフルであり、アウトバウンドは「すべて許可」にするのが一般的  
+
 
