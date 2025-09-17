@@ -47,7 +47,7 @@ Changed outbound rules to **All traffic / 0.0.0.0/0**.
 
 ---
 
-## After (Success)  
+## Success  
 
 Re-ran `dnf update` and the update completed successfully.  
 
@@ -119,5 +119,6 @@ Amazon Linux 2023 で `sudo dnf update -y` を実行した際、タイムアウ�
 
 * 宛先が `0.0.0.0/0` でも、ポートが限定されていれば通信は制限される  
 * AWS のセキュリティグループはステートフルであり、アウトバウンドは「すべて許可」にするのが一般的  
+
 
 
